@@ -1,2 +1,2 @@
-# dog_facts
+# Dog facts
  A simple website for facts about dogs
