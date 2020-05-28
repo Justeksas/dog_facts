@@ -84,7 +84,6 @@ body {
         margin: 0 auto;
         width: 100%;
         background-color: rgba($color: #000000, $alpha: 0.8);
-
         .refresh {
             display: flex;
             justify-content: center;
@@ -96,7 +95,6 @@ body {
             }
             button {
                 cursor: pointer;
-                // margin: 0 0 10px;
                 background-color: rgba(31, 31, 31, 0);
                 border: solid 0px;
                 color: #ffffff;
@@ -105,6 +103,31 @@ body {
             button i:hover {
                 color: #ffc400;
                 transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .top-bar {
+        h1 {
+            font-size: 1.5rem;
+        }
+        .links {
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .fact-container {
+        .dog_fact {
+            font-size: 1.25rem;
+            .refresh {
+                font-size: 0.7rem;
+                button {
+                    font-size: 1rem;
+                }
             }
         }
     }
