@@ -1,4 +1,126 @@
-.dog_img {
-  max-height: 80vh;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: black;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  display: block;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.top-bar {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.top-bar h1 {
+  margin: 10px auto;
+  font-size: 2rem;
+}
+
+.top-bar .links {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 20px;
+}
+
+.top-bar .links a {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 0 0 0 10px;
+}
+
+.top-bar .links a:hover {
+  color: #ffc400;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.fact-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100vw;
+  text-align: center;
+}
+
+.fact-container .dog_img {
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  margin: 0 auto;
+  padding: 0 auto;
+  background-size: cover;
+  height: 100vh;
+  -webkit-box-shadow: 0px 0px 150px 0px rgba(31, 31, 31, 0.5);
+  box-shadow: 0px 0px 80px 150px rgba(31, 31, 31, 0.5);
+}
+
+.fact-container .dog_fact {
+  height: auto;
+  color: white;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  padding: 10px 5vw 20px;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fact-container .dog_fact .refresh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.fact-container .dog_fact .refresh p {
+  margin: 0 3px;
+}
+
+.fact-container .dog_fact .refresh button {
+  cursor: pointer;
+  background-color: rgba(31, 31, 31, 0);
+  border: solid 0px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.fact-container .dog_fact .refresh button i:hover {
+  color: #ffc400;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

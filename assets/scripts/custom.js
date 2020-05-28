@@ -1,19 +1,12 @@
-jQuery.ajaxPrefilter(function (options) {
-    if (options.crossDomain && jQuery.support.cors) {
-        options.url = "https://ancient-dusk-93363.herokuapp.com/" + options.url;
-    }
-});
+function refreshPage() {
+    window.location.reload();
+}
 
-$.getJSON("https://some-random-api.ml/facts/dog", function (data) {
-    console.log(data);
-
-    let dog_fact = data.fact;
-    $(".dog_fact").append(dog_fact);
-});
-
-$.getJSON("https://some-random-api.ml/img/dog", function (image) {
-    console.log(image);
-
-    let dog_img = image.link;
-    $(".dog_img").attr("src", dog_img);
-});
+(function countdown(remaining) {
+    if (remaining === 0) location.reload(true);
+    if (remaining > 0)
+        document.getElementById("countdown").innerHTML = remaining;
+    setTimeout(function () {
+        countdown(remaining - 1);
+    }, 1000);
+})(30); // 30 seconds
